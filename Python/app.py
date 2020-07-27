@@ -21,7 +21,6 @@ model = load_model(
 @app.route("/", methods=["POST", "GET"])
 def upload():
     try:
-
         if(request.method == "POST"):
             f = request.files['image']
 
@@ -35,18 +34,15 @@ def upload():
             if(np.max(x) > 1):
                 x = x/255.0
             predics = model.predict_classes(x)
-            predict = model.predict(x)
-            predict = ((int(predict)) * 100)
+            predics = int(predics)
 
             text = 'none'
-            if(predics[0] == 0):
+            if(predics == 0):
                 color = 'green'
                 text = "The Person is a Healthy Person!"
-                accuracy = ''
-            elif(predics[0] == 1):
+            elif(predics == 1):
                 color = 'red'
                 text = "The Person has Pneumonia! Please consult with Doctor as soon as Possible!"
-                accuracy = f'<h3>Accuracy of the Model on this Prediction: <strong style="color: {color};">{predict} %</strong></h3>'
             back = '{window.history.back();}'
             return f'''
             <html>
@@ -72,7 +68,6 @@ def upload():
             <strong>
             <h3 style="color: {color};">{text}</h3>
             </strong>
-            {accuracy}
         </div>
         <button
             class="button button-primary"

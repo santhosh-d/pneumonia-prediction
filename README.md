@@ -11,7 +11,7 @@
 ### Steps to Run the Project
 1. Download the Project 
 2. Run 'Final Project Train.ipynb' to save the model 
-#### Warning: May take longer period to train the model
+###### (Warning: May take longer period to train the model)
 3. Open Command Window on the Python folder of the Project
 4. In CMD type 'python app.py' to run the flask
 5. Open Localhost(127.0.0.1:5000) in your web browser to access the front end

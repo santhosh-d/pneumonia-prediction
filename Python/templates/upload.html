@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pneumonia Prediction System</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css"
+      integrity="sha512-zzq8ZrbhP7DGbwClbqSYuo+di3FvAlMNykCKWE6pHuqmCgGjJSISDTzy7QkdI2ajLlgw0nx6hxIu8os2hYuN8w=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" type="image/png" href="../static/favicon-32x32.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title center pd-top">
+        <h1>Welcome!</h1>
+      </div>
+      <div class="row">
+        <div class="eight columns" style="margin-top: 5%;">
+          <h3>Pneumonia Prediction System</h3>
+          <p>
+            This is My Intern Project. Where I trained a model that can
+            accuratly predict whether the person has
+            <strong>Pneumonia</strong> or not with the help of
+            <strong>Lung X-Ray Images</strong>, which the user is able to upload
+            on this website!
+          </p>
+        </div>
+        <div class="four columns center" style="margin-top: 5%;">
+          <div>
+            <img src="../static/heart.jpg" width="50%" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="eight columns">
+          <h5>Upload your X-Ray Image</h5>
+        </div>
+      </div>
+      <div>
+        <form action="#" method="POST" enctype=multipart/form-data>
+          <input type="file" name="image" accept=".png, .jpg, .jpeg" />
+          <input
+            type="submit"
+            class="u-full-width button-primary"
+            id="btn-predict"
+            value="Predict"
+          />
+        </form>
+      </div>
+      <!-- <div class="results" style="margin-top: 5%;">
+        <h4>
+          <strong>Results</strong>
+        </h4>
+
+        <h5>The Person has Pneumonia</h5>
+      </div>
+    </div> -->
+  </body>
+</html>

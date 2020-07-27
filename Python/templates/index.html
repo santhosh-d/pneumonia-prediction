@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pneumonia Prediction System</title>
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css"
+      integrity="sha512-zzq8ZrbhP7DGbwClbqSYuo+di3FvAlMNykCKWE6pHuqmCgGjJSISDTzy7QkdI2ajLlgw0nx6hxIu8os2hYuN8w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title center pd-top">
+        <h1>Welcome!</h1>
+      </div>
+      <div class="row">
+        <div class="eight columns" style="margin-top: 5%;">
+          <h3>Some Error Has Occured</h3>
+          <p>
+            Sorry for the Inconvenience..!
+          </p>
+        </div>
+        <div class="four columns center" style="margin-top: 5%;">
+          <div>
+            <img src="../static/heart.jpg" width="50%" alt="" srcset="" />
+          </div>
+        </div>
+          <button
+          class="button button-primary"
+          style="font-size: large;"
+          onclick="goBack()"
+          >
+          Go to Prediction
+        </button>
+
+        <script>
+            function goBack()
+            {window.history.back();}
+        </script>
+      </div>
+  </body>
+</html>
